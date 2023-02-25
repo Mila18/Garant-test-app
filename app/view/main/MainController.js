@@ -21,7 +21,8 @@ Ext.define('DocsTestApp.view.main.MainController', {
 
     onClickButton: function () {
         // Remove the localStorage key/value
-        localStorage.removeItem('TutorialLoggedIn');
+        localStorage.removeItem('Login');
+        localStorage.removeItem('Password');
 
         // Remove Main View
         this.getView().destroy();
