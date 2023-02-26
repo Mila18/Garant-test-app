@@ -19,7 +19,7 @@ Ext.define('DocsTestApp.view.main.MainController', {
         }
     },
 
-    onClickButton: function () {
+    onLogoutButton: function() {
         // Remove the localStorage key/value
         localStorage.removeItem('Login');
         localStorage.removeItem('Password');
@@ -31,5 +31,9 @@ Ext.define('DocsTestApp.view.main.MainController', {
         Ext.create({
             xtype: 'login'
         });
+    },
+
+    onDocumentsClick: function() {
+        
     }
 });
