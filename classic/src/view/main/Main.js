@@ -14,7 +14,8 @@ Ext.define('DocsTestApp.view.main.Main', {
         'Ext.window.MessageBox',
 
         'DocsTestApp.view.main.MainController',
-        'DocsTestApp.view.main.MainModel'
+        'DocsTestApp.view.main.MainModel',
+        'DocsTestApp.view.main.List'
     ],
 
     controller: 'main',
@@ -27,34 +28,42 @@ Ext.define('DocsTestApp.view.main.Main', {
     defaults: {
         split: true
     },
+
     items: [
         {
-            region: 'north',
             xtype: 'panel',
+            header: false,
+            title: 'menu',
+            region: 'north',
             items: {
                 xtype: 'button',
                 text: 'Документы',
-                style: {
-                    backgroundColor: 'transparent',
-                    border: 'none'
-                },
-                listeners: {
-                    click: 'onDocumentsClick'
+                margin: '8 8',
+                region: 'north',
+                handler: function() {
+                    
                 }
             }
-        },
-        {   
+        },{
+            xtype: 'panel',
+            header: false,
+            title: 'mainPanel',
+            id: 'mainpanel',
             region: 'center',
             items: {
-                xtype: 'mainlist'
+                xtype: 'tabpanel',
+                items: [
+                    { 
+                        xtype: 'mainlist',
+                        closable: true 
+                    }
+                ]
             }
-        },
-        {
-            region: 'east',
-            width: 250,
-            items: {
-                xtype: 'sidebar'
-            }
+        },{
+            xtype: 'sidebar',
+            header: false,
+            title: 'sidebar',
+            region: 'east'
         }
     ]
 });

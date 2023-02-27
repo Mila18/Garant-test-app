@@ -9,16 +9,17 @@ Ext.define('DocsTestApp.view.main.List', {
         'DocsTestApp.store.Personnel'
     ],
 
-    title: 'Personnel',
+    title: 'Список товаров',
 
     store: {
         type: 'personnel'
     },
 
     columns: [
-        { text: 'Name',  dataIndex: 'name' },
-        { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Phone', dataIndex: 'phone', flex: 1 }
+        { text: 'Id',  dataIndex: 'id' },
+        { text: 'Название', dataIndex: 'title', flex: 1 },
+        { text: 'Описание', dataIndex: 'description', flex: 1 },
+        { text: 'Подпись', dataIndex: 'sign', flex: 1 }
     ],
 
     listeners: {
