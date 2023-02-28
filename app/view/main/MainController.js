@@ -9,7 +9,7 @@ Ext.define('DocsTestApp.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
+    onItemClicked: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },
 
@@ -20,20 +20,17 @@ Ext.define('DocsTestApp.view.main.MainController', {
     },
 
     onLogoutButton: function() {
-        // Remove the localStorage key/value
         localStorage.removeItem('Login');
         localStorage.removeItem('Password');
 
-        // Remove Main View
         this.getView().destroy();
 
-        // Add the Login Window
         Ext.create({
             xtype: 'login'
         });
     },
 
     onDocumentsClick: function() {
-        
+        this.getView().lookupReference('tab').add({ xtype: 'mainlist', closable: true })
     }
 });

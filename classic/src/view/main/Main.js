@@ -1,10 +1,3 @@
-/**
- * This class is the main view for the application. It is specified in app.js as the
- * "mainView" property. That setting automatically applies the "viewport"
- * plugin causing this view to become the body element (i.e., the viewport).
- *
- * TODO - Replace this content of this view to suite the needs of your application.
- */
 Ext.define('DocsTestApp.view.main.Main', {
     extend: 'Ext.container.Container',
     xtype: 'app-main',
@@ -22,48 +15,55 @@ Ext.define('DocsTestApp.view.main.Main', {
     viewModel: 'main',
     plugins: 'viewport',
 
-    layout: {
-        type: 'border',
-    },
-    defaults: {
-        split: true
-    },
-
-    items: [
-        {
-            xtype: 'panel',
-            header: false,
-            title: 'menu',
-            region: 'north',
-            items: {
-                xtype: 'button',
-                text: 'Документы',
-                margin: '8 8',
-                region: 'north',
-                handler: function() {
-                    
+    items: {
+        xtype: 'panel',
+        minHeight: '700',
+        dockedItems: [
+            {
+                xtype: 'toolbar',
+                dock: 'top',
+                items: {
+                    xtype: 'button',
+                    text: 'Документы',
+                    listeners: {
+                        click: 'onDocumentsClick'
+                    }
                 }
-            }
-        },{
-            xtype: 'panel',
-            header: false,
-            title: 'mainPanel',
-            id: 'mainpanel',
-            region: 'center',
-            items: {
-                xtype: 'tabpanel',
+            },{
+                xtype: 'toolbar',
+                dock: 'right',
+                width: 200,
+                border: true,
                 items: [
-                    { 
-                        xtype: 'mainlist',
-                        closable: true 
+                    {
+                        xtype: 'label',
+                        html: `Добрый день, ${localStorage.getItem("Login")}`,
+                        margin: '20 30',
+                        renderer: function (value, meta) {
+                            console.log(meta, value)
+                        }
+                    }, {
+                        xtype: 'button',
+                        text: 'Выйти',
+                        maxWidth: '100',
+                        margin: '0 40',
+                        listeners: {
+                            click: 'onLogoutButton'
+                        }
                     }
                 ]
             }
-        },{
-            xtype: 'sidebar',
+        ],
+        items: {
+            title: 'Tab Panel',
             header: false,
-            title: 'sidebar',
-            region: 'east'
+            xtype: 'tabpanel',
+            reference: 'tab',
+            items: {
+                closable: true,
+                xtype: 'mainlist',
+                reference: 'table',
+            }
         }
-    ]
+    }
 });
