@@ -11,10 +11,9 @@ Ext.define('DocsTestApp.view.login.LoginController', {
             localStorage.setItem("Login", usernameValue);
             localStorage.setItem("Password", passwordValue);
         
-            this.getView().destroy();
-
-            Ext.create({
-                xtype: 'app-main'
+            this.getView().lookupViewModel().set({
+                Login: usernameValue,
+                isLogged: true
             });
         } else alert('Логин и/или пароль неверны')
 

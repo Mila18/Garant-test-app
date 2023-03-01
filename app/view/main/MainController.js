@@ -7,10 +7,9 @@ Ext.define('DocsTestApp.view.main.MainController', {
         localStorage.removeItem('Login');
         localStorage.removeItem('Password');
 
-        this.getView().destroy();
-
-        Ext.create({
-            xtype: 'login'
+        this.getView().lookupViewModel().set({
+            Login: null,
+            isLogged: false
         });
     },
 

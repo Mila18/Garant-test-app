@@ -12,14 +12,6 @@ Ext.define('DocsTestApp.view.main.Main', {
     ],
 
     controller: 'main',
-    
-    viewModel: {
-        type: 'main',
-        data: {
-            Login: localStorage.getItem('Login')
-        }
-    },
-    plugins: 'viewport',
 
     items: {
         xtype: 'panel',

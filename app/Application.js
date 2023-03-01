@@ -1,19 +1,7 @@
-/**
- * The main application class. An instance of this class is created by app.js when it
- * calls Ext.application(). This is the ideal place to handle application launch and
- * initialization details.
- */
 Ext.define('DocsTestApp.Application', {
     extend: 'Ext.app.Application',
 
     name: 'DocsTestApp',
-
-    quickTips: false,
-    platformConfig: {
-        desktop: {
-            quickTips: true
-        }
-    },
 
     launch: function () {
         var login;
@@ -23,17 +11,26 @@ Ext.define('DocsTestApp.Application', {
         password = localStorage.getItem("Password");
 
         Ext.create({
-            xtype: login === 'admin' ? 'app-main' : 'login'
-        });
-    },
+            viewModel: {
+                type: 'main'
+            },
+            plugins: 'viewport',
+            xtype: 'container',
+            items: [{
+                    xtype: 'app-main',
+                    hidden: true,
+                    bind: {
+                        hidden: '{!isLogged}'
+                    }
 
-    onAppUpdate: function () {
-        Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
-            function (choice) {
-                if (choice === 'yes') {
-                    window.location.reload();
+                }, {
+                    xtype: 'login',
+                    hidden: true,
+                    bind: {
+                        hidden: '{isLogged}'
+                    }
                 }
-            }
-        );
+            ]
+        });
     }
 });
