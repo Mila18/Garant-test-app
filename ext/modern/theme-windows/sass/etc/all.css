@@ -1,0 +1,19 @@
+/**
+ * @class Global_CSS
+ */
+/**
+ * Includes the default styles for toolbar buttons, mostly used as a helper function.
+ *
+ * @param {color} $bg-color Base color to be used for the button.
+ */
+/**
+ * Creates a background gradient for masked elements, based on the lightness of their background.
+ *
+ * @param {color} $bg-color Background color of element.
+ * @param {percent} $percent Contrast of the new gradient to its background.
+ * @param {percent} $style Gradient style of the gradient.
+ *
+ */
+/**
+* TextBlock styles
+*//*# sourceMappingURL=all.css.map */

@@ -15,10 +15,6 @@ Ext.define('DocsTestApp.Application', {
         }
     },
 
-    stores: [
-        // TODO: add global / shared stores here
-    ],
-
     launch: function () {
         var login;
         var password;

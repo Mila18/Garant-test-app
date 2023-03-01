@@ -12,6 +12,7 @@ Ext.define('DocsTestApp.view.main.Main', {
     ],
 
     controller: 'main',
+    
     viewModel: {
         type: 'main',
         data: {
@@ -37,7 +38,7 @@ Ext.define('DocsTestApp.view.main.Main', {
             },{
                 xtype: 'toolbar',
                 dock: 'right',
-                width: 200,
+                width: 160,
                 border: true,
                 items: [
                     {
@@ -45,12 +46,12 @@ Ext.define('DocsTestApp.view.main.Main', {
                         bind: {
                             html: 'Добрый день, {Login}'
                         },
-                        margin: '20 30'
+                        margin: '20 15'
                     }, {
                         xtype: 'button',
                         text: 'Выйти',
                         maxWidth: '100',
-                        margin: '0 40',
+                        margin: '0 20',
                         listeners: {
                             click: 'onLogoutButton'
                         }
@@ -63,11 +64,7 @@ Ext.define('DocsTestApp.view.main.Main', {
             header: false,
             xtype: 'tabpanel',
             reference: 'tab',
-            items: {
-                title: 'Список товаров',
-                closable: true,
-                xtype: 'mainlist',
-            }
+            
         }
     }
 });

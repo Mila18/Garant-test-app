@@ -1,0 +1,9 @@
+/**
+ * @class Ext.SegmentedButton
+ */
+.x-segmentedbutton .x-button {
+  margin: 0;
+}
+.x-segmentedbutton .x-button:not(.x-first) {
+  border-left: 0;
+}/*# sourceMappingURL=SegmentedButton.css.map */
