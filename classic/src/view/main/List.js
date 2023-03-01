@@ -5,9 +5,7 @@ Ext.define('DocsTestApp.view.main.List', {
     requires: [
         'DocsTestApp.store.Goods'
     ],
-
-    title: 'Список товаров',
-
+    
     store: {
         type: 'goods'
     },

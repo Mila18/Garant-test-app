@@ -12,7 +12,12 @@ Ext.define('DocsTestApp.view.main.Main', {
     ],
 
     controller: 'main',
-    viewModel: 'main',
+    viewModel: {
+        type: 'main',
+        data: {
+            Login: localStorage.getItem('Login')
+        }
+    },
     plugins: 'viewport',
 
     items: {
@@ -37,11 +42,10 @@ Ext.define('DocsTestApp.view.main.Main', {
                 items: [
                     {
                         xtype: 'label',
-                        html: `Добрый день, ${localStorage.getItem("Login")}`,
-                        margin: '20 30',
-                        renderer: function (value, meta) {
-                            console.log(meta, value)
-                        }
+                        bind: {
+                            html: 'Добрый день, {Login}'
+                        },
+                        margin: '20 30'
                     }, {
                         xtype: 'button',
                         text: 'Выйти',
@@ -60,9 +64,9 @@ Ext.define('DocsTestApp.view.main.Main', {
             xtype: 'tabpanel',
             reference: 'tab',
             items: {
+                title: 'Список товаров',
                 closable: true,
                 xtype: 'mainlist',
-                reference: 'table',
             }
         }
     }

@@ -2,7 +2,7 @@ Ext.define('DocsTestApp.store.Goods', {
     extend: 'Ext.data.Store',
 
     alias: 'store.goods',
-
+    
     fields: [
         'Id', 'Название', 'Описание', 'Подпись'
     ],
