@@ -5,13 +5,13 @@
     $ui: 'navigation',
     $ui-tab-background-color: transparent,
     $ui-tab-background-color-over: #505050,
-    $ui-tab-background-color-active: #5fa2dd,
+    $ui-tab-background-color-active: #fff,
     $ui-tab-background-gradient: 'none',
     $ui-tab-background-gradient-over: 'none',
     $ui-tab-background-gradient-active: 'none',
-    $ui-tab-color: #000,
+    $ui-tab-color: #fff,
     $ui-tab-color-over: #c4c4c4,
-    $ui-tab-color-active: #fff,
+    $ui-tab-color-active: #000,
     $ui-tab-glyph-color: #acacac,
     $ui-tab-glyph-color-over: #c4c4c4,
     $ui-tab-glyph-color-active: #fff,
@@ -31,7 +31,7 @@
     $ui-tab-icon-width: 24px,
     $ui-tab-icon-height: 24px,
     $ui-tab-icon-spacing: 5px,
-    $ui-bar-background-color: #fff,
+    $ui-bar-background-color: #691717,
     $ui-bar-background-gradient: 'none',
     $ui-bar-padding: 0,
     $ui-strip-height: 0
@@ -55,6 +55,19 @@
     $ui-header-padding: 0,
     $ui-header-text-margin: 36px,
     $ui-header-noborder-adjust: false
+);
+
+@include extjs-button-small-ui(
+    $ui: 'custom-button',
+    $background-color: #691717,
+    $border-color: #691717,
+    $border-color-over: #691717,
+    $border-color-focus: #691717,
+    $border-color-pressed: #691717,
+    $inner-border-width-over: 0,
+    $inner-border-width-pressed: 0,
+    $inner-border-width-focus: 0,
+    $inner-border-width-focus-over: 0
 );
 
 .x-title-icon-navigation {

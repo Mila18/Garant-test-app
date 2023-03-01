@@ -20,7 +20,7 @@ Ext.define('DocsTestApp.view.main.List', {
             flex: 1,
             renderer: function(value, metaData) {
                 if (value === 'Да') {
-                    metaData.tdStyle = 'background-color: green; color: #fff;'
+                    metaData.tdStyle = 'background-color: #125412; color: #fff;'
                 }
                 return value
             }

@@ -22,6 +22,7 @@ Ext.define('DocsTestApp.view.main.Main', {
                 dock: 'top',
                 items: {
                     xtype: 'button',
+                    ui: 'custom-button',
                     text: 'Документы',
                     listeners: {
                         click: 'onDocumentsClick'
@@ -41,6 +42,7 @@ Ext.define('DocsTestApp.view.main.Main', {
                         margin: '20 15'
                     }, {
                         xtype: 'button',
+                        ui: 'custom-button',
                         text: 'Выйти',
                         maxWidth: '100',
                         margin: '0 20',
@@ -55,8 +57,8 @@ Ext.define('DocsTestApp.view.main.Main', {
             title: 'Tab Panel',
             header: false,
             xtype: 'tabpanel',
-            reference: 'tab',
-            
+            reference: 'tab',  
+            ui: 'navigation'  
         }
     }
 });
