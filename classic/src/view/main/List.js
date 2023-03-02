@@ -13,7 +13,7 @@ Ext.define('DocsTestApp.view.main.List', {
     columns: [
         { text: 'Id',  dataIndex: 'id', width: '5%' },
         { text: 'Название', dataIndex: 'title', width: '30%'},
-        { text: 'Описание', dataIndex: 'description', width: '40%'},
+        { text: 'Описание', dataIndex: 'description', width: '50%'},
         { 
             text: 'Подпись', 
             dataIndex: 'sign', 

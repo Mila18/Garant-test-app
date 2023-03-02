@@ -53,7 +53,8 @@
     $ui-header-background-color: $base-color,
     $ui-header-padding: 0,
     $ui-header-text-margin: 36px,
-    $ui-header-noborder-adjust: false
+    $ui-header-noborder-adjust: false,
+    $ui-border-color: #b3b3b3
 );
 
 @include extjs-button-small-ui(

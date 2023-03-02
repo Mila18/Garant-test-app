@@ -8786,7 +8786,7 @@ div.x-border-layout-ct {
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-neutral/sass/src/panel/Panel.scss:276 */
 .x-panel-navigation {
-    border-color: #5fa2dd;
+    border-color: #b3b3b3;
     padding: 0;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-neutral/sass/src/panel/Panel.scss:282 */
@@ -9018,105 +9018,105 @@ div.x-border-layout-ct {
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:2 */
 .x-panel-navigation-outer-border-l {
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:6 */
 .x-panel-navigation-outer-border-b {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:10 */
 .x-panel-navigation-outer-border-bl {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:16 */
 .x-panel-navigation-outer-border-r {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:20 */
 .x-panel-navigation-outer-border-rl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:26 */
 .x-panel-navigation-outer-border-rb {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:32 */
 .x-panel-navigation-outer-border-rbl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:40 */
 .x-panel-navigation-outer-border-t {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:44 */
 .x-panel-navigation-outer-border-tl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:50 */
 .x-panel-navigation-outer-border-tb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:56 */
 .x-panel-navigation-outer-border-tbl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:64 */
 .x-panel-navigation-outer-border-tr {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:70 */
 .x-panel-navigation-outer-border-trl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #b3b3b3 !important;
     border-left-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:78 */
 .x-panel-navigation-outer-border-trb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #b3b3b3 !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #b3b3b3 !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #b3b3b3 !important;
     border-bottom-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
 .x-panel-navigation-outer-border-trbl {
-    border-color: #5fa2dd !important;
+    border-color: #b3b3b3 !important;
     border-width: 1px !important;
 }
 /* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
@@ -11240,48 +11240,48 @@ div.x-border-layout-ct {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:97 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:98 */
 .x-tab-focus.x-tab-navigation {
     outline: none;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:101 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:102 */
 .x-form-checkbox-focus {
     color: #691717!important;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:105 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:106 */
 .x-form-checkbox-default {
     color: #691717!important;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:109 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:110 */
 .x-title-icon-navigation {
     font-family: 'Font Awesome 5 Free';
     color: #fff;
     font-size: 24px;
     line-height: 24px;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:116 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:117 */
 .x-tab-icon-el-navigation {
     font-family: 'Font Awesome 5 Free';
     color: #acacac;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:120 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:121 */
 .x-tab-over .x-tab-icon-el-navigation {
     color: #c4c4c4;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:124 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:125 */
 .x-tab-active .x-tab-icon-el-navigation {
     color: #fff;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:129 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:130 */
 .x-panel-header-title-navigation > .x-title-text-navigation:after {
     top: 30px;
     right: -24px;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:134 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:135 */
 .x-btn-default-toolbar-small {
     background-color: #5fa2dd;
 }
-/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:138 */
+/* C:/Users/Milan/OneDrive/Documents/Projects/Garant-test-app/classic/sass/src/view/main/Main.scss:139 */
 .x-btn-inner-default-toolbar-small {
     color: #fff;
     font-weight: 600;

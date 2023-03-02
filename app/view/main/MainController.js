@@ -14,10 +14,11 @@ Ext.define('DocsTestApp.view.main.MainController', {
     },
 
     onDocumentsClick: function() {
-        this.getView().lookupReference('tab').add({ 
+        var newTab = this.getView().lookupReference('tab').add({ 
             xtype: 'mainlist', 
             closable: true, 
-            title: 'Список товаров' 
+            title: 'Список товаров'
         })
+        this.getView().lookupReference('tab').setActiveTab(newTab)
     }
 });

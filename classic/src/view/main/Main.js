@@ -28,37 +28,49 @@ Ext.define('DocsTestApp.view.main.Main', {
                         click: 'onDocumentsClick'
                     }
                 }
-            },{
-                xtype: 'toolbar',
-                dock: 'right',
-                width: 160,
-                border: true,
-                items: [
-                    {
-                        xtype: 'label',
-                        bind: {
-                            html: 'Добрый день, {Login}'
-                        },
-                        margin: '20 15'
-                    }, {
-                        xtype: 'button',
-                        ui: 'custom-button',
-                        text: 'Выйти',
-                        maxWidth: '100',
-                        margin: '0 20',
-                        listeners: {
-                            click: 'onLogoutButton'
-                        }
-                    }
-                ]
-            }
+            },
         ],
         items: {
-            title: 'Tab Panel',
-            header: false,
-            xtype: 'tabpanel',
-            reference: 'tab',  
-            ui: 'navigation'  
+            xtype: 'panel',
+            layout: 'hbox',
+            items: [
+                {
+                    title: 'Tab Panel',
+                    header: false,
+                    xtype: 'tabpanel',
+                    reference: 'tab',  
+                    flex: 1,
+                    ui: 'navigation'
+                },
+                {
+                    xtype: 'panel',
+                    maxWidth: 180,
+                    minHeight: 1000,
+                    border: true,
+                    ui: 'navigation',
+                    items: [
+                        {
+                            xtype: 'label',
+                            margin: '20',
+                            style: {
+                                display: 'inline-block'
+                            },
+                            bind: {
+                                html: 'Добрый день, {Login}'
+                            },
+                        }, {
+                            xtype: 'button',
+                            ui: 'custom-button',
+                            text: 'Выйти',
+                            maxWidth: '100',
+                            margin: '0 50',
+                            listeners: {
+                                click: 'onLogoutButton'
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 });
