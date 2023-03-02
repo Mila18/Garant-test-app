@@ -15,7 +15,7 @@
     $ui-tab-glyph-color: #acacac,
     $ui-tab-glyph-color-over: #c4c4c4,
     $ui-tab-glyph-color-active: #fff,
-    $ui-tab-glyph-opacity: 1,
+    $ui-tab-glyph-opacity: 0,
     $ui-tab-border-radius: 0,
     $ui-tab-border-width: 0,
     $ui-tab-inner-border-width: 0,
@@ -34,7 +34,6 @@
     $ui-bar-background-color: #691717,
     $ui-bar-background-gradient: 'none',
     $ui-bar-padding: 0,
-    $ui-strip-height: 0
 );
 
 /**
@@ -61,14 +60,51 @@
     $ui: 'custom-button',
     $background-color: #691717,
     $border-color: #691717,
-    $border-color-over: #691717,
-    $border-color-focus: #691717,
+    $border-color-over: #340f0f,
+    $border-color-focus: #340f0f,
     $border-color-pressed: #691717,
     $inner-border-width-over: 0,
     $inner-border-width-pressed: 0,
     $inner-border-width-focus: 0,
-    $inner-border-width-focus-over: 0
+    $inner-border-width-focus-over: 0,
+    $font-size: 14px
 );
+
+@include extjs-window-ui(
+    $ui: 'window',
+    $ui-border-radius: 5,
+    $ui-header-background-color: #691717,
+    $ui-header-border-width: 0,
+    $ui-border-width: 0,
+    $ui-header-inner-border-width: 0,
+    $ui-body-border-width: 0
+);
+
+@include extjs-text-field-ui(
+    $ui: 'textfield',
+    $ui-focus-border-color: rgb(255, 196, 196),
+    $ui-trigger-border-color-focus: rgb(255, 196, 196)
+);
+
+@include extjs-checkbox-ui(
+    $ui: 'checkbox',
+    $ui-checkbox-glyph-focus-color: #691717,
+    $ui-checkbox-glyph-color: #691717,
+    $ui-radio-glyph-color: #691717,
+    $ui-radio-glyph-focus-color: #691717,
+);
+
+.x-tab-focus.x-tab-navigation{
+    outline: none
+}
+
+.x-form-checkbox-focus {
+    color: #691717!important;
+}
+
+.x-form-checkbox-default {
+    color: #691717!important;
+}
 
 .x-title-icon-navigation {
     font-family: 'Font Awesome 5 Free';

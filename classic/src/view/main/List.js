@@ -28,11 +28,12 @@ Ext.define('DocsTestApp.view.main.List', {
     ],
 
     listeners: {
-        rowdblclick: function(ctx, record, tr, rowIndex, e, eOpts) {
+        rowdblclick: function(ctx, record) {
             Ext.create('Ext.window.Window', {
                 title: `Документ №${record.data.id}`,
                 height: 200,
                 width: 400,
+                ui: 'window',
                 items: {
                     xtype: 'panel',
                     header: false,
@@ -44,13 +45,14 @@ Ext.define('DocsTestApp.view.main.List', {
                             name: 'title',
                             fieldLabel: 'Название',
                             id: 'title',
-                            value: record.data.title
+                            value: record.data.title,
+                            ui: 'textfield'
                         }, {
                             xtype: 'checkbox',
                             fieldLabel: 'Подписать документ',
                             name: 'sign',
                             id: 'sign',
-                            value: record.data.sign === 'Да' ? true : false
+                            value: record.data.sign === 'Да' ? true : false,
                         }
                     ],
                     dockedItems: {
@@ -60,8 +62,11 @@ Ext.define('DocsTestApp.view.main.List', {
                             '->', {
                             xtype: 'button',
                             text: 'Сохранить',
+                            ui: 'custom-button',
                             listeners: {
-                                click: 'onDocumentsClick'
+                                click: function() {
+                                    console.log('manageBtn')
+                                }
                             }}                           
                         ]
                     }

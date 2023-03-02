@@ -6,7 +6,7 @@ Ext.define('DocsTestApp.view.login.Login', {
         'DocsTestApp.view.login.LoginController',
         'Ext.form.Panel'
     ],
-
+    ui: 'window',
     controller: 'login',
     bodyPadding: 10,
     title: 'Окно входа',
@@ -21,6 +21,7 @@ Ext.define('DocsTestApp.view.login.Login', {
             name: 'username',
             fieldLabel: 'Пользователь',
             id: 'username',
+            ui: 'textfield',
             allowBlank: false
         }, {
             xtype: 'textfield',
@@ -28,6 +29,7 @@ Ext.define('DocsTestApp.view.login.Login', {
             inputType: 'password',
             fieldLabel: 'Пароль',
             id: 'password',
+            ui: 'textfield',
             allowBlank: false
         }, {
             xtype: 'displayfield',
@@ -35,6 +37,7 @@ Ext.define('DocsTestApp.view.login.Login', {
             value: 'Введите Ваш пароль'
         }],
         buttons: [{
+            ui: 'custom-button',
             text: 'Войти',
             formBind: true,
             listeners: {
